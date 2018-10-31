@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ILoveForms</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <title>TheGossipProject</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
-  </head>
+  
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <a class="navbar-brand">The Gossip Project</a>
+        <a class="nav-link active" href="http://localhost:3000/the_gossip_project/home">Home</a>
+         <a class="nav-link" href="http://localhost:3000/the_gossip_project/team">Team</a>
+
+      <a class="nav-link" href="http://localhost:3000/the_gossip_project/contact">Contact</a>
+ 
+   
+  </nav>
+  
+  
+ 
+
+  
+</head>
 
   <body>
     <%= yield %>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>
