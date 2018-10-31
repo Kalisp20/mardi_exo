@@ -3,9 +3,9 @@
 one:
   username: MyString
   email: MyString
-  bio: MyString
+  bio: MyText
 
 two:
   username: MyString
   email: MyString
-  bio: MyString
+  bio: MyText
